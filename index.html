@@ -5,15 +5,18 @@
 
 <body>
     <h1>github pages test</h1>
-    <form>
-    <input type="text" name="tuika" value=""><br>
-    <input type="button" value="追加" onclick="func1();this.form.tuika.value="""><br>
+    <form name ="formname">
+    <input type="text" name="syouname" value="">
+    <input type="text" name="syouprice" value=""><br>
+    <input type="button" value="追加" onclick="func1()"><br>
     </form>
     <script>
-        var syouhin[];
-        
+        var syouhin;
+
         var func1 = function(){
             console.log("HelloWorld!!");
+            formname.syouname.value="";
+            formname.syouprice.value="";
         } 
 
     </script>
